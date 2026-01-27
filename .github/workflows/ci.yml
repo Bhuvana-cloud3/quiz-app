@@ -22,4 +22,11 @@ jobs:
         run: npm ci
 
       - name: Build application
-        run: npm run build 
+        run: npm run build
+
+      - name: Run tests
+        run: npm test
+
+      - name: Generate coverage report
+        run: npm run test:coverage
+        continue-on-error: true
