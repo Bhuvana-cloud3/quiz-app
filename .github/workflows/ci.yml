@@ -7,7 +7,10 @@ on:
   pull_request:
     branches: [main, develop]
   
-  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
+  
+  
   
 jobs:
   ci:
