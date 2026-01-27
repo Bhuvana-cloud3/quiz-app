@@ -1,15 +1,43 @@
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+
+# Build and distribution
 dist/
 build/
+lib/
+
+# Environment variables
 .env
 .env.local
 .env.*.local
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-.DS_Store
-.idea
-.vscode
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 *.log
+lerna-debug.log*
+
+# Code coverage
 coverage/
 .nyc_output/
+*.lcov
+
+# IDE and editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Test results
+test-results/
+junit.xml
+
+# Temporary files
+*.tmp
+tmp/
+temp/

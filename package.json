@@ -7,7 +7,9 @@
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "test": "jest --detectOpenHandles --forceExit",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --detectOpenHandles --forceExit",
+    "coverage:report": "jest --coverage --coverageReporters=html --detectOpenHandles --forceExit && open coverage/index.html"
   },
   "keywords": [
     "quiz",
