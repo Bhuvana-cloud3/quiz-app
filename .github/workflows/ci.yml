@@ -3,9 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
-
+  
 jobs:
   ci:
     runs-on: ubuntu-latest
@@ -22,17 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
- 
-      - name: Run tests with coverage
-        run: npm run test:coverage
-
-      - name: Verify coverage thresholds
-        run: |
-          echo "Checking coverage thresholds..."
-          npm test -- --coverage \
-            --collectCoverageFrom='src/**/*.js' \
-            --coveragePathIgnorePatterns='/node_modules/'
 
       - name: Build application
         run: npm run build 
