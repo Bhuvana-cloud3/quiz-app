@@ -17,6 +17,9 @@ on:
     types: [closed]
     branches: [main, develop]
   
+  issues:
+    types: [opened, closed]
+  
   # schedule:
   #   - cron: '*/5 * * * *'
    
