@@ -13,6 +13,10 @@ on:
     paths:
       - 'src/**'
   
+  pull_request_target:
+    types: [closed]
+    branches: [main, develop]
+  
   # schedule:
   #   - cron: '*/5 * * * *'
    
